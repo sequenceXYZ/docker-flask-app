@@ -1,0 +1,106 @@
+openapi: 3.0.0
+
+info:
+  title: Famous People Catalog API
+  description: Information about famous people
+  version: 1.0.0
+
+servers:
+  - url: /api
+
+paths:
+  /famous_people:
+    get:
+      summary: Get all information about famous people
+      operationId: api.read_all
+      responses:
+        "200":
+          description: Successfully retrieved information about people
+        "404":
+          description: Something went wrong
+
+    post:
+      summary: Add new famous person
+      operationId: api.create_data_row
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: person
+              $ref: "#/components/schemas/Person"
+      responses:
+        "200":
+          description: Successfully added a famous person
+        "400":
+          description: Invalid request body
+        "500":
+          description: Unexpected server error
+
+  /famous_people/{name}:
+    get:
+      summary: Get information about a specific person
+      operationId: api.read_one_row
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        "200":
+          description: Successfully retrieved information about a single person"
+        "404":
+          description: Famous person not found
+        "500":
+          description: Unexpected server error
+
+    delete:
+      summary: Delete one row
+      operationId: api.delete_row
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        "200":
+          description: Successfully deleted a famous person
+        "404":
+          description: Famous person not found
+        "500":
+          description: Unexpected server error
+
+    put:
+      summary: Update one row
+      operationId: api.update_row
+      parameters:
+        - $ref: "#/components/parameters/name"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: person
+              $ref: "#/components/schemas/Person"
+      responses:
+        "200":
+          description: Successfully updated information about a famous person
+        "404":
+          description: Famous person not found
+        "500":
+          description: Unexpected server error
+
+components:
+  schemas:
+    Person:
+      required:
+        - name
+        - field
+        - country
+      properties:
+        name:
+          type: string
+        field:
+          type: string
+        country:
+          type: string
+  parameters:
+    name:
+      name: name
+      description: person's name
+      in: path
+      required: true
+      schema:
+        type: string

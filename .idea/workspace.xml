@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bcf701e-fd90-4641-96fc-5b760413ce38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/db_connect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/db_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-app/swagger.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2OjgofBFh2TrS8GCwtSeJQFnqus" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sgtuser/docker-flask-app"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bcf701e-fd90-4641-96fc-5b760413ce38" name="Changes" comment="" />
+      <created>1682079581927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682079581927</updated>
+    </task>
+    <servers />
+  </component>
+</project>
