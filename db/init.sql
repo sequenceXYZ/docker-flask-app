@@ -2,11 +2,6 @@ create database people;
 use people;
 
 CREATE TABLE famous_people (
-  name VARCHAR(20),
-  color VARCHAR(10)
-);
-
-CREATE TABLE famous_people (
    id INT NOT NULL AUTO_INCREMENT, '
    name VARCHAR(255) NOT NULL,
    field VARCHAR(255) NOT NULL,
